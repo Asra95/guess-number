@@ -1,0 +1,15 @@
+import random
+min = 10
+max = 20
+
+try_again = "y"
+
+while try_again == "y":
+    generator=random.randint(min,max)
+    guess=input("Guess a number between 10 to 20: ")
+    if guess == generator:
+        print("Good job!")
+    if guess != generator:  
+        print("Opps, Try again!")
+        print("Correct answer is: " + guess)
+    try_again=input("press y to play again: ")
